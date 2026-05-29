@@ -1,0 +1,187 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#000;
+color:white;
+}
+
+.hero{
+min-height:100vh;
+background:url("images/favela-noite.jpg");
+background-size:cover;
+background-position:center;
+position:relative;
+}
+
+.overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.75);
+}
+
+.content{
+position:relative;
+z-index:2;
+display:flex;
+justify-content:space-around;
+align-items:center;
+padding:50px;
+flex-wrap:wrap;
+}
+
+.evento{
+max-width:600px;
+}
+
+.evento h1{
+font-size:90px;
+color:#fff;
+text-shadow:0 0 20px orange;
+}
+
+.evento h2{
+font-size:70px;
+color:#ffb300;
+text-shadow:0 0 20px #ffb300;
+}
+
+.data{
+margin-top:20px;
+font-size:28px;
+font-weight:bold;
+color:#fff;
+}
+
+.atracao{
+margin-top:40px;
+background:#111;
+padding:20px;
+border:2px solid orange;
+border-radius:15px;
+}
+
+.atracao span{
+color:orange;
+font-weight:bold;
+}
+
+.atracao h3{
+font-size:60px;
+color:#fff;
+margin-top:10px;
+}
+
+.foto-artista img{
+width:450px;
+border-radius:20px;
+box-shadow:0 0 40px orange;
+}
+
+.promocoes{
+padding:60px;
+background:#111;
+}
+
+.promocoes h2{
+text-align:center;
+font-size:50px;
+margin-bottom:40px;
+color:#ffb300;
+}
+
+.cards{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.card{
+background:#1b1b1b;
+padding:30px;
+width:300px;
+border-radius:20px;
+text-align:center;
+border:2px solid orange;
+}
+
+.card h3{
+color:#ffb300;
+margin-bottom:15px;
+}
+
+.bebidas{
+padding:60px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.categoria{
+background:#111;
+padding:20px;
+border-radius:15px;
+border:2px solid orange;
+}
+
+.categoria h3{
+margin-bottom:15px;
+color:#ffb300;
+}
+
+.categoria ul{
+list-style:none;
+}
+
+.categoria li{
+padding:8px 0;
+border-bottom:1px solid #333;
+}
+
+footer{
+background:#111;
+padding:50px;
+text-align:center;
+}
+
+footer h2{
+font-size:50px;
+color:#ffb300;
+margin-bottom:15px;
+}
+
+footer p{
+font-size:22px;
+}
+
+@media(max-width:768px){
+
+.evento h1{
+font-size:55px;
+}
+
+.evento h2{
+font-size:40px;
+}
+
+.atracao h3{
+font-size:40px;
+}
+
+.foto-artista img{
+width:100%;
+max-width:350px;
+margin-top:20px;
+}
+
+.promocoes h2{
+font-size:35px;
+}
+
+}
